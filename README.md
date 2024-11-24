@@ -1,47 +1,51 @@
 # CaesarCipher
-A simple implementation of the Caesar Cipher for encryption and decryption. The program allows users to input a text, specify a shift parameter, and choose to either encrypt or decrypt the text. It preserves the case of letters and handles non-alphabetic characters gracefully.
+A Python script for generating strong, customizable passwords with a built-in random shift logic for enhanced security. The password includes a user-defined mix of lowercase letters, uppercase letters, and special characters.
 
 
-Caesar Cipher: Encrypt and Decrypt Text
+Random Password Generator with Shift Logic
 Overview
 
-This project is a Python-based implementation of the Caesar Cipher, a classic encryption technique. It enables users to encrypt and decrypt text using a shift parameter. The program ensures that uppercase letters remain uppercase and handles non-alphabetic characters without modification.
+This Python program generates a secure and customizable password using a mix of lowercase letters, uppercase letters, and special symbols. It incorporates a random shift logic to make the passwords more secure by offsetting characters within their respective categories.
 Features
 
-    Encrypt or Decrypt: Choose between encrypting or decrypting text.
-    Customizable Shift: Specify a shift parameter to control how letters are transformed.
-    Case Preservation: Maintains uppercase and lowercase letters in their respective cases.
-    Handles Non-Alphabetic Characters: Non-alphabetic characters remain unchanged.
+    Customizable Password Composition:
+        User inputs the desired number of lowercase letters, uppercase letters, and special characters.
+    Random Shift Logic:
+        A random shift value is applied to introduce additional randomness to the password.
+    Shuffling:
+        Final password characters are shuffled to ensure unpredictability.
+    Simple and Lightweight:
+        No external libraries required (uses only Python's built-in random module).
 
 How It Works
 
-    Encryption: Each letter in the input text is shifted forward by the given number of positions in the alphabet.
-    Decryption: Each letter is shifted backward by the given number of positions in the alphabet.
-    Wrap-Around: The program uses modular arithmetic to ensure that shifts wrap around the end of the alphabet (e.g., shifting "z" forward results in "a").
+    Input Parameters:
+        Users specify how many lowercase letters, uppercase letters, and special characters the password should contain.
+    Random Shift:
+        Each character is selected based on a randomly determined shift to its position in the list of available characters.
+    Password Construction:
+        Characters are added to a list, shuffled, and then converted into a string to form the final password.
 
 Usage
 
-    Clone the repository or download the script.
-    Run the script using Python:
+    Clone or download the script to your local environment.
+    Run the script:
 
-    python caesar_cipher.py
+    python password_generator.py
 
-    Follow the input prompts:
-        Enter s for encryption or d for decryption.
-        Provide the text to process.
-        Specify the shift parameter as an integer.
+    Follow the prompts to input your desired password configuration:
+        Number of lowercase letters.
+        Number of uppercase letters.
+        Number of special characters.
+    Copy and use the generated password!
 
 Example Execution
-Encryption
+User Input:
 
-Enter 's' for encryption or 'd' for decryption: s
-Enter text: Hello World
-Enter shift parameter (integer): 3
-Encrypted text: khoor zruog
+Vnesi kolku mali bukvi sakas da ima vo passwordot 5
+Vnesi kolku golemi bukvi sakas da ima vo passwordot 3
+Vnesi kolku znaci sakas da ima vo passwordot: 2
 
-Decryption
+Output:
 
-Enter 's' for encryption or 'd' for decryption: d
-Enter text: khoor zruog
-Enter shift parameter (integer): 3
-Decrypted text: hello world
+$aCeGtU!v
